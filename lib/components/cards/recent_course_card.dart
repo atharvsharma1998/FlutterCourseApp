@@ -1,13 +1,12 @@
 import 'package:designcode/model/course.dart';
 import 'package:flutter/material.dart';
-
 import '../../constants.dart';
 
 class RecentCourseCard extends StatelessWidget {
 
   RecentCourseCard({this.course});
 
-  Course course;
+  final Course course;
 
   @override
   Widget build(BuildContext context) {
