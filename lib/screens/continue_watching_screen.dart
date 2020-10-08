@@ -1,3 +1,5 @@
+import 'package:designcode/components/certificate_viewer.dart';
+import 'package:designcode/components/lists/continue_watching_list.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 import '../constants.dart';
@@ -46,11 +48,18 @@ class ContinueWatchingScreen extends StatelessWidget {
             child: Text("Continue Watching",style: kTitle2Style,),
           ),
           Padding(
+            padding:  EdgeInsets.symmetric(vertical: 24),
+            child: ContinueWatchingList(),
+          ),
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 32),
             child: Text("Certificates",style: kTitle2Style,),
-          )
+          ),
+          Expanded(child: CertificateViewer()),
         ],
       ),
     );
   }
 }
+
+
