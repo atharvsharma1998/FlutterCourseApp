@@ -1,6 +1,6 @@
-# designcode
+# Course App
 
-A new Flutter application.
+Developed UI for Flutter application. Followed course by DesignCode
 
 ## Getting Started
 
